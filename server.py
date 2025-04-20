@@ -11,10 +11,10 @@ def index():
 def emotion_detection_route():
     text_to_analyze = request.args.get("textToAnalyze")
     
-    if not text_to_analyze:
-        return "No text provided", 400
-    
     result = emotion_detector(text_to_analyze)
+
+    if result['dominant_emotion'] is None:
+        return "Invalid text! Please try again!"
 
     formatted = (
         f"For the given statement, the system response is "
