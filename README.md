@@ -9,6 +9,13 @@ This project is a web application for detecting emotions in text using Natural L
 - Uses Flask for the backend and a pre-trained NLP model for emotion detection.
 - Includes unit tests to ensure the accuracy of emotion detection.
 
+## Tech Stack
+
+- **Backend**: Flask (Python)
+- **Frontend**: HTML, CSS (Bootstrap), JavaScript
+- **Emotion Detection**: Pre-trained NLP model via IBM Watson API
+- **Testing**: Python's unittest module
+- **HTTP Requests**: Python's requests library
 
 ## Prerequisites
 - Python 3.8 or higher
